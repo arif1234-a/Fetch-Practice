@@ -4,7 +4,7 @@ import "./App.css";
 import { Table } from "./Components/Table";
 import { ColorfulTable } from "./Components/ColorfulTable";
 import Practice from "./Components/Practice";
-
+import CarList from "./Components/CarList";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,6 +16,7 @@ function App() {
       <Table />
       <ColorfulTable />
       <Practice />
+      <CarList />
     </>
   );
 }
