@@ -9,8 +9,8 @@ function Practice() {
   });
   return (
     <div>
-      {table.map((table) => (
-        <div>{table.make}</div>
+      {table.map((table, index) => (
+        <div key={index}>{table.make}</div>
       ))}
     </div>
   );

@@ -14,28 +14,28 @@ export function Table() {
       <table>
         <tbody>
           <tr>
-            {table.map((table) => (
-              <td>{table.make}</td>
+            {table.map((table, index) => (
+              <td key={index}>{table.make}</td>
             ))}
           </tr>
           <tr>
-            {table.map((table) => (
-              <td>{table.year}</td>
+            {table.map((table, index) => (
+              <td key={index}>{table.year}</td>
             ))}
           </tr>
           <tr>
-            {table.map((table) => (
-              <td>{table.price}</td>
+            {table.map((table, index) => (
+              <td key={index}>{table.price}</td>
             ))}
           </tr>
           <tr>
-            {table.map((table) => (
-              <td>{table.features}</td>
+            {table.map((table, index) => (
+              <td key={index}>{table.features}</td>
             ))}
           </tr>
           <tr>
-            {table.map((table) => (
-              <td>{table.model}</td>
+            {table.map((table, index) => (
+              <td key={index}>{table.model}</td>
             ))}
           </tr>
         </tbody>
